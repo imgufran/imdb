@@ -17,6 +17,7 @@ export default function DarkModeSwitch() {
 
   return (
     <>
+      {/* Display the buttons only when the page is fully rendered */}
       {mounted &&
         (currentTheme === "dark" ? (
           <MdLightMode
