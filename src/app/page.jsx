@@ -18,6 +18,7 @@ export default async function Home({ searchParams }) {
     }
   );
 
+  // This will be caught by the error page and passed to the page as a prop.
   if (!res.ok) {
     throw new Error("Failed to fetch data");
   }
