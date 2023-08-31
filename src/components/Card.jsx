@@ -12,8 +12,7 @@ export default function Card({ result }) {
         <Image
           className="sm:rounded-t-lg group-hover:opacity-80 transition-opacity duration-200"
           src={
-            `https://image.tmdb.org/t/p/original/${result.backdrop_path}` ||
-            result.original_title
+            `https://image.tmdb.org/t/p/original/${result.backdrop_path || result.poster_path}`
         }
           width={500}
           height={300}
