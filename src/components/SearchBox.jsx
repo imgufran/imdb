@@ -16,6 +16,9 @@ export default function SearchBox() {
     }
 
     router.push(`/search/${search}`);
+
+    // Reset the search field
+    setSearch("");
   }
 
   return (
